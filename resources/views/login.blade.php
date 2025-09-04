@@ -30,7 +30,7 @@
   </a>
 </div>
 
-<div class="container">
+<div class="contact-form">
   <h2>LOGIN</h2>
     
   @if(Session::has('error'))
@@ -42,16 +42,16 @@
   <form method="POST" action="{{ route('DOLOGIN') }}">
     @csrf
 
-    <div class="form-group">
-      <label for="email">Email address</label>
-      <input type="email" name="email" class="form-control" placeholder="Enter email" id="email" required>
-    </div>
-    <div class="form-group">
-      <label for="pwd">Password</label>
-      <input type="password" name="password" class="form-control" placeholder="Enter password" id="pwd" required>
-  </div>
+   
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <div class="form-group">
+    <p>Email</p>
+    <input type="email" name="email" class="form-control" placeholder="Enter email" id="email" required>
+    <p>Password</p>
+    <input type="password" name="password" class="form-control" placeholder="Enter password" id="pwd" required>
+   
+  </div>
+   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 </div>
 @endsection

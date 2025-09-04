@@ -15,7 +15,7 @@
 }
 
 .header img {
-    height: 42px;
+    height: 49px;
     margin-right: 3px;
 }
 
@@ -45,9 +45,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 30px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-top: 35px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .logo {
@@ -67,7 +67,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 19px;
 }
 
 nav ul li:hover {

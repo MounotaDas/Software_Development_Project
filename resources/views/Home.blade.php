@@ -3,7 +3,7 @@
 @section('content2')
    
 
-    <img src="./images/GEC_campus.png" class="img-fluid">
+    
 <div class="container">
     <img src="./images/convo.png" class="img_deg">
     <h2><b>WELCOME TO PREMIER <br>UNIVERSITY<br></b></h2>

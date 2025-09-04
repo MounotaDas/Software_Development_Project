@@ -20,6 +20,7 @@
     @yield('content1')
     @yield('content2')
     @yield('content3')
+    @yield('content4')
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

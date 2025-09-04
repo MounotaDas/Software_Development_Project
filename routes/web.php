@@ -41,5 +41,11 @@ Route::get('/Home', function () {
 Route::get('/Contact', function () {
     return view('Contact');
 });
+Route::get('/home', function () {
+    return view('Home'); 
+})->name('home');
 
+Route::get('/contact', function () {
+    return view('Contact'); 
+})->name('contact');
 

@@ -4,7 +4,7 @@ body {
 }
 
 .nav-item {
-    font-size: 24px;
+    font-size: 20px;
     padding: 20px;
     color: #fff;
 }
@@ -34,58 +34,69 @@ body {
     object-fit: cover;
 }
 
-.container {
+.contact-form {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 400px;
-    padding: 20px;
-    background: rgba(19, 19, 19, 0.8);
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-    max-width: 400px;
-    height: auto;
+    width: 420px;
+    height: 420px;
+    padding: 80px 40px;
+    background: rgba(0, 0, 0, 0.6);
 }
 
-.container h2 {
+.form-control:focus {
+    outline: none;
+    border-color: rgba(255, 247, 247, 0.5);
+    background: rgba(243, 240, 240, 0.2);
+    width: 100%;
+}
+
+.contact-form h2 {
     text-align: center;
     margin: 0 0 20px 0;
-    color: #0c0b0b;
+    color: #ecdada;
     text-transform: uppercase;
-    font-size: 32px;
+    font-size: 34px;
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .form-group label {
     color: #fff;
     font-size: 16px;
-    margin-bottom: 5px;
+    margin-bottom: 9px;
     display: block;
 }
 
-.form-control {
-    width: 90%;
-    padding: 10px;
-    font-size: 16px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: #fff;
-    border-radius: 5px;
+.contact-form input {
+    width: 100%;
+    margin-bottom: 8px;
 }
 
-.form-control:focus {
+.form-group p {
+    font-style: normal;
+    text-decoration: #fff;
+}
+
+.contact-form input[type=email],
+.contact-form input[type=password] {
+    border: none;
+    border-bottom: solid#faf7f7;
     outline: none;
-    border-color: rgba(255, 255, 255, 0.5);
-    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 16px;
 }
 
 .btn-primary {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     background: #007bff;
     border: none;
     color: #fff;
@@ -93,18 +104,16 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s ease;
+    margin: bottom 3px;
+    gap: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9%;
+    height: 40px;
 }
 
 .btn-primary:hover {
     background: #0056b3;
-}
-
-.container input[type=password] {
-    border: none;
-    border-bottom: solid#faf7f7;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: #fff;
-    font-size: 18px;
+    gap: 16px;
 }

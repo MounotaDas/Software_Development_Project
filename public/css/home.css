@@ -3,25 +3,9 @@
     width: 49%;
 }
 
-.img-fluid {
-    background-position: center;
-    height: 82vh;
-    margin: 0;
-    padding: 0;
-    background-image: linear-gradient(rgba(186, 189, 193, 0.5), rgba(113, 108, 108, 0.6)), url(../images/campus.png);
-    opacity: 0.36;
-}
-
 .container {
-    position: absolute;
-    width: 85%;
-    background-color: rgb(179, 173, 173);
-    top: 37%;
-    padding: 38px;
-    height: auto;
-    max-width: 97%;
-    margin-bottom: 40px;
-    text-align: center;
+    position: relative;
+    margin-top: 5%;
 }
 
 .explore-container {

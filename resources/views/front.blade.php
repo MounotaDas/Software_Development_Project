@@ -7,12 +7,12 @@
             <img src="./images/premier_university.png">
         <div class="text">
                 <h1><b> Premier University</b></h1>
-                <p>Department of Computer Science And Engineering</p>
+                <p>Department of Computer Science And <br>Engineering</br></p>
             </div>
         </div>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="{{route('home')}}">Home</a></li>
+            <li><a href="{{ route('contact') }}">Contact</a></li>
             <li><a href="#">Courses</a></li>
             <li><a href="#">Enrollment</a></li>
             <li><a href="#">Result</a></li>
