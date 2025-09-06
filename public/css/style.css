@@ -82,7 +82,8 @@ body {
 
 .form-group p {
     font-style: normal;
-    text-decoration: #fff;
+    color: oldlace;
+    margin-bottom: 8.5px;
 }
 
 .contact-form input[type=email],

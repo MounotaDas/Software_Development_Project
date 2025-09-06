@@ -49,3 +49,22 @@ Route::get('/contact', function () {
     return view('Contact'); 
 })->name('contact');
 
+Route::get('/course/1st_sem', function () {
+    return view('course.1st_sem');
+})->name('/course/1st_sem');
+
+Route::get('/course/2nd_sem', function () {
+    return view('course.2nd_sem');
+})->name('/course/2nd_sem');
+
+Route::get('/course/3rd_sem', function () {
+    return view('course.3rd_sem');
+})->name('/course/3rd_sem');
+
+Route::get('/course/4th_sem', function () {
+    return view('course.4th_sem');
+})->name('/course/4th_sem');
+
+Route::get('/course/5th_sem', function () {
+    return view('course.5th_sem');
+})->name('/course/5th_sem');

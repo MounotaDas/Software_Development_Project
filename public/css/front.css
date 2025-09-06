@@ -1,150 +1,169 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-.header {
-    color: rgb(9, 24, 37);
-    display: flex;
-    padding: 10px 20px;
-    align-items: center;
-    padding-left: 5px;
-    justify-content: space-between;
-}
-
-.header img {
-    height: 49px;
-    margin-right: 3px;
-}
-
-.header .text {
-    line-height: 1.2;
-}
-
-.header .text h1 {
-    margin: 0;
-    font-size: 23px;
-}
-
-.header .text p {
-    margin: 0;
-    font-size: 20px;
-}
-
-.hero {
-    height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(46, 52, 60, 0.5), rgba(46, 44, 44, 0.6)), url(../images/premier_university\ \(1\).png);
-    background-size: cover;
-    background-position: center;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 35px;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-.logo {
-    color: aliceblue;
-    font-size: 36px;
-    padding-right: 335px;
-}
-
-nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px 20px;
-    padding-right: 25px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 19px;
-}
-
-nav ul li:hover {
-    color: aliceblue;
-    transition: .3s;
-}
-
-button {
-    border: none;
-    background: rgb(39, 39, 225);
-    padding: 12px 30px;
-    border-radius: 30px;
-    text-decoration: white;
-    font-weight: bold;
-    font-size: 14px;
-    transition: .3s;
-    box-shadow: 0px 5px 10px 1px;
-}
-
-.pic img {
-    float: left;
-    width: 170px;
-    height: auto;
-}
-
-.title {
-    position: absolute;
-    top: 46%;
-    right: 60%;
-    font-style: italic;
-}
-
-.title h1 {
-    color: white;
-    font-size: 68px;
-}
-
-.button {
-    position: absolute;
-    top: 41%;
-    left: 42%;
-    order: -1;
-    justify-content: space-between;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.copyright {
-    text-align: right;
-    position: absolute;
-    right: 80px;
-    bottom: 35px;
-    color: white;
-    font-size: 20px;
-}
-
-.menu-icon {
-    display: none
-}
-
-;
-.menu-icon i {
-    color: #fff;
-    font-size: 37px;
-}
-
-@media(max-width:600px) {
-    nav ul {
-        position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
-        flex-direction: column;
-        text-align: center;
-        background: rgb(69, 69, 218);
-    }
-}
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: 'Josefin Sans', sans-serif;
+ }
+ 
+ .header {
+     color: rgb(9, 24, 37);
+     display: flex;
+     padding: 10px 20px;
+     align-items: center;
+     padding-left: 5px;
+     justify-content: space-between;
+ }
+ 
+ .header img {
+     height: 45px;
+     margin-right: 3px;
+ }
+ 
+ .header .text {
+     line-height: 1.2;
+ }
+ 
+ .header .text h1 {
+     margin: 0;
+     font-size: 21px;
+ }
+ 
+ .header .text p {
+     margin: 0;
+     font-size: 17px;
+ }
+ 
+ .hero {
+     height: 100vh;
+     width: 100%;
+     background-image: linear-gradient(rgba(46, 52, 60, 0.5), rgba(46, 44, 44, 0.6)), url(../images/premier_university\ \(1\).png);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     margin: 0%;
+ }
+ 
+ nav {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding-top: 35px;
+     padding-left: 5%;
+     padding-right: 5%;
+ }
+ 
+ .logo {
+     color: aliceblue;
+     font-size: 34px;
+     padding-right: 335px;
+ }
+ 
+ nav ul li {
+     list-style-type: none;
+     display: inline-block;
+     padding: 10px 20px;
+     padding-right: 25px;
+ }
+ 
+ nav ul li a {
+     color: white;
+     text-decoration: none;
+     font-weight: bold;
+     font-size: 19px;
+ }
+ 
+ nav ul li:hover {
+     color: aliceblue;
+     transition: .3s;
+ }
+ 
+ button {
+     border: none;
+     background: rgb(54, 54, 214);
+     padding: 12px 30px;
+     border-radius: 30px;
+     text-decoration: white;
+     font-weight: bold;
+     font-size: 16px;
+     transition: .3s;
+     box-shadow: 0px 5px 10px 1px;
+ }
+ 
+ .pic img {
+     float: left;
+     width: 170px;
+     height: auto;
+ }
+ 
+ .title {
+     position: absolute;
+     top: 46%;
+     right: 60%;
+     font-style: italic;
+ }
+ 
+ .title h1 {
+     color: white;
+     font-size: 68px;
+ }
+ 
+ .button {
+     position: absolute;
+     top: 41%;
+     left: 42%;
+     order: -1;
+     justify-content: space-between;
+ }
+ 
+ .footer-container {
+     display: flex;
+     justify-content: flex-end;
+ }
+ 
+ .copyright {
+     text-align: right;
+     position: absolute;
+     right: 80px;
+     bottom: 35px;
+     color: white;
+     font-size: 20px;
+ }
+ 
+ .menu-icon {
+     display: none
+ }
+ 
+ ;
+ .menu-icon i {
+     color: #fff;
+     font-size: 37px;
+ }
+ 
+ @media(max-width:600px) {
+     nav ul {
+         position: absolute;
+         top: 70px;
+         left: 0;
+         right: 0;
+         flex-direction: column;
+         text-align: center;
+         background: rgb(69, 69, 218);
+     }
+ }
+ 
+ ul .submenu {
+     position: absolute;
+     background-color: #0a0909;
+     width: 200px;
+     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+     margin: -40px;
+     opacity: 0;
+     z-index: -999;
+     transition: all ease 0.5s;
+ }
+ 
+ ul li:hover .submenu {
+     opacity: 1;
+     z-index: 99;
+     margin-top: 0;
+ }

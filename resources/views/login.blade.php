@@ -31,7 +31,7 @@
 </div>
 
 <div class="contact-form">
-  <h2>LOGIN</h2>
+  <h2>PUAIS</h2>
     
   @if(Session::has('error'))
       <div class="alert alert-danger">
