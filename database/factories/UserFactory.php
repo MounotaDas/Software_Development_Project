@@ -24,12 +24,26 @@ class UserFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => fake()->name(),
-            'email' => fake()->unique()->safeEmail(),
+            'first_name' => $this->faker->firstName(),
+            'last_name' => $this->faker->lastName(),
+            'email' => $this->faker->unique()->safeEmail(),
+            'gender' => $this->faker->randomElement(['Male','Female']),
+            'nationality' => $this->faker->country(),
+            'phone' => $this->faker->phoneNumber(),
+            'address' => $this->faker->streetAddress(),
+            'address2' => $this->faker->secondaryAddress(),
+            'city' => $this->faker->city(),
+            'zip' => $this->faker->postcode(),
+            'photo' => $this->faker->imageUrl(200,200),
+            'birthday' => $this->faker->date(),
+            'blood_type' => $this->faker->randomElement(['A+','A-','B+','B-','O+','O-','AB+','AB-']),
+            'religion' => $this->faker->randomElement(['Islam','Hinduism','Christianity','Buddhism']),
+            'role' => $this->faker->randomElement(['admin','student']),
             'email_verified_at' => now(),
-            'password' => static::$password ??= Hash::make('password'),
+            'password' => bcrypt('password'),
             'remember_token' => Str::random(10),
         ];
+
     }
 
     /**
@@ -39,6 +53,36 @@ class UserFactory extends Factory
     {
         return $this->state(fn (array $attributes) => [
             'email_verified_at' => null,
+        ]);
+    }
+
+    /**
+     * Create a student user.
+     */
+    public function student(): static
+    {
+        return $this->state(fn (array $attributes) => [
+            'role' => 'student',
+        ]);
+    }
+
+    /**
+     * Create a teacher user.
+     */
+    public function teacher(): static
+    {
+        return $this->state(fn (array $attributes) => [
+            'role' => 'teacher',
+        ]);
+    }
+
+    /**
+     * Create an admin user.
+     */
+    public function admin(): static
+    {
+        return $this->state(fn (array $attributes) => [
+            'role' => 'admin',
         ]);
     }
 }

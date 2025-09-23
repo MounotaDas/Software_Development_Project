@@ -14,11 +14,6 @@
     <link rel="stylesheet" href="{{asset('css/front.css')}}">
     <link rel="stylesheet" href="{{asset('css/home.css')}}">
     <link rel="stylesheet" href="{{asset('css/contact.css')}}">
-    <link rel="stylesheet" href="{{asset('css/1st_sem.css')}}">
-    <link rel="stylesheet" href="{{asset('css/2nd_sem.css')}}">
-    <link rel="stylesheet" href="{{asset('css/3rd_sem.css')}}">
-    <link rel="stylesheet" href="{{asset('css/4th_sem.css')}}">
-    <link rel="stylesheet" href="{{asset('css/5th_sem.css')}}">
   </head>
   <body>
     @yield('content')
@@ -26,10 +21,7 @@
     @yield('content2')
     @yield('content3')
     @yield('content4')
-    @yield('content5')
-    @yield('content6')
-    @yield('content7')
-    @yield('content8')
+   
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

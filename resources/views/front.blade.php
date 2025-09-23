@@ -13,16 +13,8 @@
         <ul>
             <li><a href="{{route('home')}}">Home</a></li>
             <li><a href="{{ route('contact') }}">Contact</a></li>
-            <li><a href="#">Course</a>
-              <ul class="submenu">
-                <li><a href="{{ route('/course/1st_sem') }}">1st</a></li>
-                <li><a href="{{ route('/course/2nd_sem') }}">2nd</a></li>
-                <li><a href="{{ route('/course/3rd_sem') }}">3rd</a></li>
-                <li><a href="{{ route('/course/4th_sem') }}">4th</a></li>
-                <li><a href="{{ route('/course/5th_sem') }}">5th</a></li>
-              </ul>
-           </li>
-            <li><a href="#">Enrollment</a></li>
+            <li><a href="{{ route('courses.index') }}">Course</a></li>
+            <li><a href="{{ route('enrollments.index') }}">Enrollment</a></li>
             <li><a href="#">Result</a></li>
         </ul>
         <button type="button" onclick="window.location='{{ route('logout') }}'">logout</button>
@@ -31,11 +23,9 @@
         </div>
 
     </nav>
-
-
-            <div class="line"></div>
+    <div class="line"></div>
     <div class="footer-container">
-    <p class="copyright">Copyright ©2011–2025 <a href="https://puc.ac.bd/">University Page</a></p>
+        <p class="copyright">University Course & Result management system</p>
 </div>
 
 </div>

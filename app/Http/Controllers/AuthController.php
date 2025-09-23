@@ -21,7 +21,7 @@ class AuthController extends Controller
         if ($credentials['email'] === 'mounota@gmail.com' && 
             $credentials['password'] === 'mounota') {
             
-            // Create a session4
+            // Create a session
             session(['logged_in' => true]);
             return redirect('/front');
         }
