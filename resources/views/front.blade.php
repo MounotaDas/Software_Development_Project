@@ -25,7 +25,7 @@
     </nav>
     <div class="line"></div>
     <div class="footer-container">
-        <p class="copyright">University Course & Result management system</p>
+        <p class="copyright">University Course & Result Management System</p>
 </div>
 
 </div>

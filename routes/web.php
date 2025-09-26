@@ -147,3 +147,6 @@ Route::prefix('results')->group(function () {
 });
 Route::get('/enrollments', [EnrollmentController::class, 'index'])->name('enrollments.index');
 Route::get('/enrollments', [EnrollmentController::class, 'index'])->name('enrollments.index');
+Route::get('/search', [CourseController::class, 'search'])->name('search');
+Route::get('/enrollment', [EnrollmentController::class, 'index'])->name('enrollment.index');
+Route::post('/enrollment-submit', [EnrollmentController::class, 'submit'])->name('enrollment.submit');

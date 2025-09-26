@@ -13,6 +13,14 @@ class CourseController extends Controller
         $courses = Course::all();
         return view('course.index', compact('courses'));
     }
+    public function search(Request $request) {
+        $searchTerm = $request->input('search');
+        $courses = Course::where('course_name', 'LIKE', '%' . $searchTerm . '%')
+                         ->orWhere('course_code', 'LIKE', '%' . $searchTerm . '%')
+                         ->orWhere('semester_no', 'LIKE', '%' . $searchTerm . '%')
+                         ->get();
+        return view('course.index', compact('courses'));
+    }
 
     // Show the form for creating a new course
     public function create() {

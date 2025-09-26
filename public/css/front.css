@@ -124,9 +124,9 @@
      text-align: right;
      position: absolute;
      right: 80px;
-     bottom: 35px;
      color: rgb(0, 0, 0);
      font-size: 25px;
+     margin-top: 500px;
  }
  
  .menu-icon {

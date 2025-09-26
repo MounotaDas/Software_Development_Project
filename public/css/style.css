@@ -47,6 +47,7 @@ body {
     height: 420px;
     padding: 80px 40px;
     background: rgba(0, 0, 0, 0.6);
+    margin-top: 325px;
 }
 
 .form-control:focus {
@@ -65,7 +66,7 @@ body {
 }
 
 .form-group {
-    margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 .form-group label {
@@ -105,7 +106,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s ease;
-    margin: bottom 3px;
+    margin-bottom: 3px;
     gap: 13px;
     display: flex;
     justify-content: center;

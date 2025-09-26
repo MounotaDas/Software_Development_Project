@@ -26,7 +26,7 @@ class EnrollmentController extends Controller
             'course_code' => 'required|string|max:255',
             'course_name' => 'required|string|max:255',
             'semester_no' => 'required|integer|min:1',
-            'type' => 'required|string|in:regular,optional',
+            'type' => 'required|string|in:Regular,Retake,Recourse',
         ]);
 
         Enrollment::create($data);
@@ -53,7 +53,7 @@ class EnrollmentController extends Controller
             'course_code' => 'required|string|max:255',
             'course_name' => 'required|string|max:255',
             'semester_no' => 'required|integer|min:1',
-            'type' => 'required|string|in:regular,optional',
+            'type' => 'required|string|in:Regular,Retake,Recourse',
         ]);
 
         $enrollment = Enrollment::findOrFail($id);
@@ -69,4 +69,26 @@ class EnrollmentController extends Controller
 
         return redirect()->route('enrollments.index')->with('success', 'Enrollment deleted successfully.');
     }
+    public function submit(Request $request)
+    {
+        
+        $selected = $request->input('selected_courses', []);
+        $types    = $request->input('type', []);
+
+        $selectedCourses = [];
+
+        foreach ($selected as $courseId) {
+            $course = Enrollment::find($courseId);
+            if ($course) {
+                // Attach selected type (not saved in DB, just for display)
+                $course->selected_type = $types[$courseId] ?? 'Regular';
+                $selectedCourses[] = $course;
+            }
+        }
+
+        return view('enrollment.result', compact('selectedCourses'));
+    }
+
 }
+   
+
